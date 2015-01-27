@@ -325,3 +325,129 @@ Questionnaire
 	6(Checkbox) 188.2 136.5   3.5   3.5 G
 	7(Checkbox) 197.3 136.5   3.5   3.5 H
 
+------------------------------------------------------------------------------
+- SDAPS -- add
+------------------------------------------------------------------------------
+Processing scan/thermo_001.tif
+Done
+Processing scan/thermo_002.tif
+Done
+Processing scan/thermo_003.tif
+Done
+Processing scan/thermo_004.tif
+Done
+Processing scan/thermo_005.tif
+Done
+Processing scan/thermo_006.tif
+Done
+Processing scan/thermo_007.tif
+Done
+Processing scan/thermo_008.tif
+Done
+Processing scan/thermo_009.tif
+Done
+Processing scan/thermo_010.tif
+Done
+Processing scan/thermo_011.tif
+Done
+Processing scan/thermo_012.tif
+Done
+Processing scan/thermo_013.tif
+Done
+Processing scan/thermo_014.tif
+Done
+Processing scan/thermo_015.tif
+Done
+Processing scan/thermo_016.tif
+Done
+Processing scan/thermo_017.tif
+Done
+Processing scan/thermo_018.tif
+Done
+Processing scan/thermo_019.tif
+Done
+Processing scan/thermo_020.tif
+Done
+Processing scan/thermo_021.tif
+Done
+Processing scan/thermo_022.tif
+Done
+Processing scan/thermo_023.tif
+Done
+Processing scan/thermo_024.tif
+Done
+Processing scan/thermo_025.tif
+Done
+Processing scan/thermo_026.tif
+Done
+Processing scan/thermo_027.tif
+Done
+Processing scan/thermo_028.tif
+Done
+Processing scan/thermo_029.tif
+Done
+Processing scan/thermo_030.tif
+Done
+Processing scan/thermo_031.tif
+Done
+Processing scan/thermo_032.tif
+Done
+Processing scan/thermo_033.tif
+Done
+Processing scan/thermo_034.tif
+Done
+Processing scan/thermo_035.tif
+Done
+Processing scan/thermo_036.tif
+Done
+Processing scan/thermo_037.tif
+Done
+------------------------------------------------------------------------------
+- SDAPS -- recognize
+------------------------------------------------------------------------------
+37 sheets
+Traceback (most recent call last):
+  File "/usr/bin/sdaps", line 23, in <module>
+    sys.exit(sdaps.main())
+  File "/usr/lib64/python2.7/site-packages/sdaps/__init__.py", line 64, in main
+    return cmdline['_func'](cmdline)
+  File "/usr/lib64/python2.7/site-packages/sdaps/script.py", line 105, in decorated_function
+    result = function(cmdline)
+  File "/usr/lib64/python2.7/site-packages/sdaps/cmdline/recognize.py", line 57, in recognize
+    return recognize.recognize(survey, filter)
+  File "/usr/lib64/python2.7/site-packages/sdaps/recognize/__init__.py", line 32, in recognize
+    survey.iterate_progressbar(survey.questionnaire.recognize.recognize, filter)
+  File "/usr/lib64/python2.7/site-packages/sdaps/model/survey.py", line 261, in iterate_progressbar
+    function()
+  File "/usr/lib64/python2.7/site-packages/sdaps/recognize/buddies.py", line 479, in recognize
+    res = self.identify(clean=False)
+  File "/usr/lib64/python2.7/site-packages/sdaps/recognize/buddies.py", line 465, in identify
+    self.obj.sheet.recognize.recognize()
+  File "/usr/lib64/python2.7/site-packages/sdaps/recognize/buddies.py", line 63, in recognize
+    image.recognize.calculate_matrix()
+  File "/usr/lib64/python2.7/site-packages/sdaps/model/buddy.py", line 78, in <lambda>
+    property(lambda self: self.get_buddy(cls.name))
+  File "/usr/lib64/python2.7/site-packages/sdaps/model/buddy.py", line 50, in get_buddy
+    setattr(self, '_%s_object_' % name, getattr(self, '_%s_class_' % name)(self))
+  File "/usr/lib64/python2.7/site-packages/sdaps/recognize/buddies.py", line 317, in __init__
+    import code128
+  File "/usr/lib64/python2.7/site-packages/sdaps/recognize/code128.py", line 22, in <module>
+    from sdaps.utils.barcode import read_barcode
+  File "/usr/lib64/python2.7/site-packages/sdaps/utils/barcode.py", line 26, in <module>
+    import zbar
+ImportError: No module named zbar
+------------------------------------------------------------------------------
+- SDAPS -- recognize
+------------------------------------------------------------------------------
+37 sheets
+0.142390 seconds per sheet
+------------------------------------------------------------------------------
+- SDAPS -- report
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+- SDAPS -- csvdata
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+- SDAPS -- report_tex
+------------------------------------------------------------------------------
+Running pdflatex now twice to generate the report.
